@@ -10,9 +10,9 @@
 
 # Steps to run application localy:
 
-Write in terminal: ng serve
-Than open in browser: http://localhost:4200/
+- Write in terminal: ng serve
+- Than open in browser: http://localhost:4200/
 
 # Build the application:
 
-To build the app: ng build
+- To build the app: ng build
