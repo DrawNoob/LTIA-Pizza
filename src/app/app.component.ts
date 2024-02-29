@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ltia-pizza-portfolio';
+  activeSection: string = 'menu';
+
+  setActiveSection(section: string) {
+    this.activeSection = section;
+  }
 }

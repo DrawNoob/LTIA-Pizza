@@ -2,8 +2,8 @@
     <section class="main-header">
         <h1>LTIA - Pizza</h1>
         <ul>
-            <li><a class="active-header-nav" href="">Pizza Menu</a></li>
-            <li><a href="">Pizza Constructor</a></li>
+            <li><a [class.active-header-nav]="activeSection === 'menu'" (click)="setActiveSection('menu')">Pizza Menu</a></li>
+            <li><a [class.active-header-nav]="activeSection === 'constructor'" (click)="setActiveSection('constructor')">Pizza Constructor</a></li>
         </ul>
         <button>Log-In</button>
     </section>
