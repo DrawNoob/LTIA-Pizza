@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { PizzaMenuComponent } from './components/pizza-menu/pizza-menu.component';
 import { PizzaItemComponent } from './components/pizza-item/pizza-item.component';
 import { PizzaCunstructorComponent } from './components/pizza-cunstructor/pizza-cunstructor.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { PizzaCunstructorComponent } from './components/pizza-cunstructor/pizza-
     PizzaMenuComponent,
     PizzaItemComponent,
     PizzaCunstructorComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,2 @@
-<!-- Header -->
-<app-header (sectionChange)="activeSection = $event"></app-header>
-
-<!-- Sections -->
-<app-pizza-menu [hidden]="activeSection !== 'menu'"></app-pizza-menu>
-<app-pizza-cunstructor [hidden]="activeSection !== 'constructor'"></app-pizza-cunstructor>
+<app-header></app-header>
+<router-outlet></router-outlet>

@@ -1,4 +1,6 @@
 header{
+    width: 100%;
+    position: fixed;
     .main-header{
         width: 100%;
         display: flex;
@@ -8,10 +10,16 @@ header{
         padding: 8px 12px;
         border-bottom: 1px solid black;
         h1{
-            font-size: 32px;
-            color: white;
-            text-shadow: 0 0 5px black;
-            letter-spacing: 1px;
+            a{
+                font-size: 32px;
+                color: white;
+                text-shadow: 0 0 5px black;
+                letter-spacing: 1px;
+                transition: 0.5s all;
+                &:hover{
+                    color: #0114b6;
+                }
+            }
         }
         ul{
             list-style: none;

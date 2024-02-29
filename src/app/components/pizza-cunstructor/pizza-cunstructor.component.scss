@@ -1,0 +1,17 @@
+.main-pizza-constructor{
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(184, 99, 80, 0.178);
+    h1{
+        font-size: 36px;
+    }
+    p{
+        text-align: center;
+        line-height: 140%;
+        margin-top: 30px;
+    }
+}

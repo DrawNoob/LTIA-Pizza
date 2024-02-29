@@ -1,9 +1,9 @@
 <header>
     <section class="main-header">
-        <h1>LTIA - Pizza</h1>
+        <h1><a routerLink="">LTIA - Pizza</a></h1>
         <ul>
-            <li><a [class.active-header-nav]="activeSection === 'menu'" (click)="setActiveSection('menu')">Pizza Menu</a></li>
-            <li><a [class.active-header-nav]="activeSection === 'constructor'" (click)="setActiveSection('constructor')">Pizza Constructor</a></li>
+            <li><a routerLinkActive="active-header-nav" routerLink="/pizza-menu">Pizza Menu</a></li>
+            <li><a routerLinkActive="active-header-nav" routerLink="/pizza-constructor">Pizza Constructor</a></li>
         </ul>
         <button>Log-In</button>
     </section>
