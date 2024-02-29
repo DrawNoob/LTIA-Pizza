@@ -1,0 +1,53 @@
+header{
+    width: 100%;
+    position: fixed;
+    .main-header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(to left, #2b2f51, #d3d3d3);
+        padding: 8px 12px;
+        border-bottom: 1px solid black;
+        h1{
+            font-size: 32px;
+            color: white;
+            text-shadow: 0 0 5px black;
+            letter-spacing: 1px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            li{
+                a{
+                    color: white;
+                    text-shadow: 0 0 5px black;
+                    transition: 0.4s all;
+                    &:hover{
+                        border-bottom: 1px solid darkblue;
+                    }
+                }
+                .active-header-nav{
+                    border-bottom: 2px solid darkblue;
+                    letter-spacing: 2px;
+                    &:hover{
+                        border-bottom: 2px solid darkblue;
+                    }
+                }
+            }
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 6px 12px;
+            font-size: 20px;
+            transition: 0.3s all;
+            width: 100px;
+            &:hover{
+                background-color: darkblue;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
