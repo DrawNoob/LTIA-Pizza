@@ -1,0 +1,35 @@
+<div class="adding-pizza-item">
+    <p>Create you own Pizza and save here!</p>
+    <form #postForm="ngForm" (ngSubmit)="onCreatePizza(postForm.value)">
+
+        <!-- Image Path -->
+        <div class="form-flex">
+            <label for="image">Зображення</label> <br>
+            <input type="text" id="image" required ngModel name="image"> <br>
+        </div>
+
+        <!-- Pizza Title -->
+        <div class="form-flex">
+            <label for="title">Назва Піцци</label> <br>
+            <input type="text" id="title" required ngModel name="title"> <br>
+        </div>
+
+        <!-- Pizza Description -->
+        <div class="form-flex">
+            <label for="description">Опис Піцци</label> <br>
+            <input type="text" id="description" required ngModel name="description"> <br>
+        </div>
+
+        <!-- Pizza Ingredients -->
+        <div class="form-flex">
+            <label for="ingredients">Інгредієнти</label> <br>
+            <input type="text" id="ingredients" required ngModel name="ingredients">
+        </div>
+
+        <!-- Submit -->
+        <div class="form-flex">
+            <button type="submit">Створити Піццу</button>
+            <button (click)="onFetchPosts()">Завантажити ваші попередні піцци</button>
+        </div>
+    </form>
+</div>
