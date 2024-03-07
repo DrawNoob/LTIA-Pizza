@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PizzaData } from '../models/pizza.model';
 
 @Component({
   selector: 'app-pizza-menu',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./pizza-menu.component.scss']
 })
 export class PizzaMenuComponent {
-
+  loadedPosts: PizzaData[] = [];
 }

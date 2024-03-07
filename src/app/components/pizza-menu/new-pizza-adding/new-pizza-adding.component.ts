@@ -10,7 +10,7 @@ import { PizzaData } from '../../models/pizza.model';
   styleUrls: ['./new-pizza-adding.component.scss']
 })
 export class NewPizzaAddingComponent {
-  loadedPosts = [];
+  loadedPosts: PizzaData[] = [];
 
   constructor(private http: HttpClient) {
 
@@ -35,12 +35,12 @@ export class NewPizzaAddingComponent {
 
 
   onFetchPosts() {
-
+    this.fetchPosts(); 
   }
 
   
   onClearPosts() {
-    // Send Http request
+    this.loadedPosts = [];
   }
 
   // Метод для отримання даних з БД, по посиланню з якого ми їх витягуємо
@@ -60,10 +60,8 @@ export class NewPizzaAddingComponent {
       )
       .subscribe(
         pizzas => {
-          // ...
-          console.log(pizzas);
+          this.loadedPosts = pizzas; 
         }
       );
   }
-  
 }

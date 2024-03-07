@@ -1,4 +1,4 @@
 <section class="main-pizza-menu">
-    <app-pizza-item style="width: 32%;"></app-pizza-item>
+    <app-pizza-item *ngFor="let pizza of loadedPosts" [pizza]="pizza" style="width: 32%;"></app-pizza-item>
     <app-new-pizza-adding style="width: 32%;"></app-new-pizza-adding>
 </section>
